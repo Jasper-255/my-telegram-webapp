@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+     <html lang="ru">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Мое веб-приложение</title>
+         <script src="https://telegram.org/js/telegram-web-app.js"></script>
+     </head>
+     <body>
+         <h1>Привет, это веб-приложение!</h1>
+         <p>Оно интегрировано в Telegram.</p>
+         <script>
+             const tg = window.Telegram.WebApp;
+             tg.expand(); // Развернуть приложение на весь экран
+             console.log(tg.initData); // Данные пользователя
+         </script>
+     </body>
+     </html>
