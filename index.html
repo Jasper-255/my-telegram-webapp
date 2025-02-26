@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-   <html lang="ru">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Мое веб-приложение</title>
-       <script src="https://telegram.org/js/telegram-web-app.js"></script>
-       <style>
-           body {
-               background-color: var(--tg-theme-bg-color, #ffffff); /* Фон по умолчанию */
-               color: var(--tg-theme-text-color, #000000); /* Цвет текста по умолчанию */
-               font-family: Arial, sans-serif;
-               margin: 0;
-               padding: 20px;
-           }
-           h1 {
-               color: var(--tg-theme-hint-color, #888888); /* Цвет заголовка */
-           }
-           p {
-               color: var(--tg-theme-text-color, #000000); /* Цвет текста */
-           }
-       </style>
-   </head>
-   <body>
-       <h1>Привет, это веб-приложение!</h1>
-       <p>Оно интегрировано в Telegram.</p>
-       <script>
-           const tg = window.Telegram.WebApp;
-           tg.expand(); // Развернуть приложение на весь экран
-           console.log(tg.initData); // Данные пользователя
-       </script>
-   </body>
-   </html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое веб-приложение</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body {
+            background-color: #ffffff; /* Белый фон */
+            color: #000000; /* Черный текст */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333333; /* Темно-серый заголовок */
+        }
+        p {
+            color: #000000; /* Черный текст */
+        }
+    </style>
+</head>
+<body>
+    <h1>Привет, это веб-приложение!</h1>
+    <p>Оно интегрировано в Telegram.</p>
+    <script>
+        const tg = window.Telegram.WebApp;
+        tg.expand(); // Развернуть приложение на весь экран
+        console.log(tg.initData); // Данные пользователя
+    </script>
+</body>
+</html>
